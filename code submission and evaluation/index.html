@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Submission System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Submission System</h1>
+        <div class="form-group">
+            <label for="language">Select Language:</label>
+            <select id="language" name="language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
+        <div class="editor-container">
+            <textarea id="code-editor" name="code" placeholder="Write your code here..."></textarea>
+        </div>
+        <button id="submit-code">Submit Code</button>
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
